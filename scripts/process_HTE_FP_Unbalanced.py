@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-# rdkit version : '2024.09.1':x
+# rdkit version : '2024.09.1'
 from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 
