@@ -1,1 +1,1 @@
-Paper : (https://chemrxiv.org/engage/chemrxiv/article-details/679c87b4fa469535b988a6fc)
+Data and data-processing scripts for the paper [Investigation of Arenes and Heteroarenes Nitration supported by High-Throughput Experimentation and Machine Learning](https://chemrxiv.org/engage/chemrxiv/article-details/679c87b4fa469535b988a6fc)
