@@ -112,9 +112,9 @@ for iteration in range(n_test):
         print("Training {} for iteration {}".format(key, iteration))
         models[key].fit(X_train, Y_train) # Fit the classifier
         predictions = models[key].predict(X_test) # Make predictions
-        df.loc[key, 'Acc.']  = accuracy_score(predictions, Y_test)
-        df.loc[key, 'Prec.'] = precision_score(predictions, Y_test)
-        df.loc[key, 'Rec.']  = recall_score(predictions, Y_test)
+        df.loc[key, 'Acc.']  = accuracy_score(Y_test, predictions)
+        df.loc[key, 'Prec.'] = precision_score(Y_test, predictions)
+        df.loc[key, 'Rec.']  = recall_score(Y_test, predictions)
         df.loc[key, 'ROC AUC']  = roc_auc_score(Y_test, predictions)
         df.loc[key, 'Bal. Acc.']  = balanced_accuracy_score(Y_test, predictions)
 
